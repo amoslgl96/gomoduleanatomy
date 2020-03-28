@@ -1,6 +1,11 @@
 package calc
 
-//Add returns sum of two ints
-func Add(i int, j int) int {
-	return i + j
+//Add returns sum of the ints stored in variadic arg numbers
+func Add(numbers ...int) int {
+	sum := 0
+	for _,n := range numbers {
+		sum += n
+	}
+
+	return sum
 }

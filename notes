@@ -4,3 +4,9 @@ A module is also like a package that you can share with other people. Hence, it 
 A Go module must be a VCS repository or a VCS repository should contain a single Go module.
 A Go module should contain one or more packages
 A package should contain one or more .go files in a single directory.
+
+
+Go modules are stored inside $GOPATH/pkg/mod directory (module cache directory). Seems like we haven’t been able to get rid of $GOPATH at all. But Go has to cache modules somewhere on the system to prevent repeated downloading of the same modules of the same versions.
+
+So, different modules might use the same dependency version, they can just reuse the code in the pkg/mod dir
+
