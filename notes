@@ -1,0 +1,6 @@
+https://medium.com/rungo/anatomy-of-modules-in-go-c8274d215c16
+
+A module is also like a package that you can share with other people. Hence, it has to be a Git or any other VCS repository which we can be hosted on a code-sharing platform like Github. Hence, Go recommends
+A Go module must be a VCS repository or a VCS repository should contain a single Go module.
+A Go module should contain one or more packages
+A package should contain one or more .go files in a single directory.
